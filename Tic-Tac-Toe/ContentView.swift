@@ -51,7 +51,7 @@ struct ContentView: View {
                             TurnHeader(player: .constant(.computer))
                             Text("AI's Turn")
                                 .font(.title2)
-                                .foregroundColor(.white)
+                                .foregroundColor(.green)
                                 .rotation3DEffect(
                                     .degrees(currentPlayer == .human  ? -90 : 0),
                                     axis: (x: 1.0, y: 0.0, z: 0.0)
