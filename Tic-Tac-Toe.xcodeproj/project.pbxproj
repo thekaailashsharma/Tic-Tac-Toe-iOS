@@ -21,6 +21,9 @@
 		846D99272ABBB1CB007F0CBE /* wins.lottie in Resources */ = {isa = PBXBuildFile; fileRef = 846D99262ABBB1C9007F0CBE /* wins.lottie */; };
 		846D992B2ABBB3D1007F0CBE /* draw.lottie in Resources */ = {isa = PBXBuildFile; fileRef = 846D992A2ABBB3D0007F0CBE /* draw.lottie */; };
 		846D992F2ABBBDDC007F0CBE /* loose.lottie in Resources */ = {isa = PBXBuildFile; fileRef = 846D992E2ABBBDDB007F0CBE /* loose.lottie */; };
+		84794DCE2ABC853E0064AF03 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84794DCD2ABC853E0064AF03 /* MainViewModel.swift */; };
+		84794DD12ABC8A140064AF03 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84794DD02ABC8A140064AF03 /* Player.swift */; };
+		84794DD32ABC8A320064AF03 /* Move.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84794DD22ABC8A320064AF03 /* Move.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,9 @@
 		846D99262ABBB1C9007F0CBE /* wins.lottie */ = {isa = PBXFileReference; lastKnownFileType = file; path = wins.lottie; sourceTree = "<group>"; };
 		846D992A2ABBB3D0007F0CBE /* draw.lottie */ = {isa = PBXFileReference; lastKnownFileType = file; path = draw.lottie; sourceTree = "<group>"; };
 		846D992E2ABBBDDB007F0CBE /* loose.lottie */ = {isa = PBXFileReference; lastKnownFileType = file; name = loose.lottie; path = ../../../Downloads/loose.lottie; sourceTree = "<group>"; };
+		84794DCD2ABC853E0064AF03 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		84794DD02ABC8A140064AF03 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		84794DD22ABC8A320064AF03 /* Move.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Move.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,9 +77,9 @@
 		846D99062ABB4E93007F0CBE /* Tic-Tac-Toe */ = {
 			isa = PBXGroup;
 			children = (
-				846D991D2ABB9981007F0CBE /* TurnHeader */,
-				846D99152ABB5D6B007F0CBE /* FlipView.swift */,
-				846D99072ABB4E93007F0CBE /* Tic_Tac_ToeApp.swift */,
+				84794DD42ABC8A570064AF03 /* presentation */,
+				84794DCF2ABC89E30064AF03 /* data */,
+				84794DCC2ABC852B0064AF03 /* ViewModel */,
 				846D99092ABB4E93007F0CBE /* ContentView.swift */,
 				846D99222ABB9C5D007F0CBE /* human.lottie */,
 				846D99262ABBB1C9007F0CBE /* wins.lottie */,
@@ -102,6 +108,33 @@
 				846D991E2ABB99E8007F0CBE /* TurnHeader.swift */,
 			);
 			path = TurnHeader;
+			sourceTree = "<group>";
+		};
+		84794DCC2ABC852B0064AF03 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				84794DCD2ABC853E0064AF03 /* MainViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		84794DCF2ABC89E30064AF03 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				84794DD02ABC8A140064AF03 /* Player.swift */,
+				84794DD22ABC8A320064AF03 /* Move.swift */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		84794DD42ABC8A570064AF03 /* presentation */ = {
+			isa = PBXGroup;
+			children = (
+				846D99152ABB5D6B007F0CBE /* FlipView.swift */,
+				846D99072ABB4E93007F0CBE /* Tic_Tac_ToeApp.swift */,
+				846D991D2ABB9981007F0CBE /* TurnHeader */,
+			);
+			path = presentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,7 +223,10 @@
 				846D990A2ABB4E93007F0CBE /* ContentView.swift in Sources */,
 				846D99162ABB5D6B007F0CBE /* FlipView.swift in Sources */,
 				846D99082ABB4E93007F0CBE /* Tic_Tac_ToeApp.swift in Sources */,
+				84794DD32ABC8A320064AF03 /* Move.swift in Sources */,
+				84794DD12ABC8A140064AF03 /* Player.swift in Sources */,
 				846D991F2ABB99E8007F0CBE /* TurnHeader.swift in Sources */,
+				84794DCE2ABC853E0064AF03 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
